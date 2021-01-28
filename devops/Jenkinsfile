@@ -3,9 +3,10 @@ pipeline
   agent any
   stages{
     
-    stage:(gitpullstage)
+    stage:(gitpullstage){
     steps{
-        git credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/Testrepo.git'
+            git credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/Testrepo.git'
+          }
     }
     
   }
