@@ -2,5 +2,7 @@ echo "iam new file"
 
 echo "iam last file"
 
-date
+def now = new Date()
+
+println now
 
