@@ -11,9 +11,9 @@ pipeline
     }
     stage('buildeploy'){
     steps{  
-           
+           cd /var/lib/jenkins/workspace/git-demo
+           chmod 777 deploy.sh
            sh "./deploy.sh"
-           git update-index --chmod=+x path/to/deploy.sh
            }
      }
     
