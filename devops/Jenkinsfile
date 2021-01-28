@@ -1,8 +1,14 @@
-echo "iam new file"
+echo "iam into Pipeline new file"
 
 echo "iam last file"
 
-def now = new Date()
+//def now = new Date()
 
-println now
+//println now
 
+import java.time.*
+import java.time.format.DateTimeFormatter
+
+def now = LocalDateTime.now()
+
+println now.format(DateTimeFormatter.ofPattern("yyyyMMddHHmm"))
