@@ -1,5 +1,6 @@
 pipeline
 {
+  agentany
   stages{
     
     stage:(gitpullstage)
