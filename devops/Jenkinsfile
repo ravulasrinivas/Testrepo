@@ -5,7 +5,8 @@ pipeline
     
     stage('gitpullstage'){
     steps{
-            git credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/Testrepo.git'
+      
+      git credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/company-name.git'
           }
     }
     
