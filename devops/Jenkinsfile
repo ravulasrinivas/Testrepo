@@ -4,15 +4,18 @@ pipeline
   stages{
     
     stage('gitpullstage'){
-    steps{
-      
-      git branch: 'branch-team', credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/company-name.git'
+    steps{      
+            git branch: 'branch-team', credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/company-name.git'
           }
-    }
     
-  }
-  
-  
+    }
+    stage('buildeploy'){
+    steps{   
+          sh "./deploy.sh"
+           }
+     }
+    
+  } 
   
 }
 
