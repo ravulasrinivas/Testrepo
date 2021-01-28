@@ -6,7 +6,7 @@ pipeline
     stage('gitpullstage'){
     steps{
       
-      git credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/company-name.git'
+      git branch: 'branch-team', credentialsId: 'sreenivas', url: 'https://github.com/ravulasrinivas/company-name.git'
           }
     }
     
