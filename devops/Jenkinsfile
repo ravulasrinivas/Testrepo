@@ -11,8 +11,7 @@ pipeline
     }
     stage('buildeploy'){
     steps{   
-          git update-index --chmod=+x path/to/deploy.sh
-          sh "./deploy.sh"
+           sh "./deploy.sh"
            }
      }
     
