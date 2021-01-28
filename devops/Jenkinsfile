@@ -1,14 +1,15 @@
-echo "iam into Pipeline new file"
+pipeline
+{
+  stages{
+    
+    stage:(gitpullstage)
+    steps{
+        
+    }
+    
+  }
+  
+  
+  
+}
 
-echo "iam last file"
-
-//def now = new Date()
-
-//println now
-
-import java.time.*
-import java.time.format.DateTimeFormatter
-
-def now = LocalDateTime.now()
-
-println now.format(DateTimeFormatter.ofPattern("yyyyMMddHHmm"))
